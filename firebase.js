@@ -34,7 +34,7 @@ try {
           .once("value")
           .then(function (snapshot) {
             console.log(snapshot.val().rqm_url);
-            // sendResponse({ farewell: snapshot.val().rqm_url });
+            sendResponse({ farewell: snapshot.val().rqm_url });
           });
       }
     });
