@@ -1,0 +1,17 @@
+{
+  "name": "Chrome-ext-Firebase",
+  "version": "0.1",
+  "description": "Chrome-ext-Firebase...",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "background": {
+    "service_worker": "firebase.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/"],
+      "js": ["app.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 3
+}
